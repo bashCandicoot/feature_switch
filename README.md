@@ -25,6 +25,15 @@ Head to the following urls in a browser/Postman/Insomnia
 
 ```DELETE http://localhost:8081/features/{id}```  
 
+# Thoughts
+
+I picked sqlite to store the data as it's nice and easy to run for little programs like this. I knew I wanted to hit a selection of routes to get/create/update/delete data so I fleshed those out quickly and linked them to a features controller.  
+
+Then I created a migration of fake data, loaded up Postman and started hitting the endpoints - beginning with the GET until I had that returning what I wanted.  
+
+If I had more time I would create a users model and tie that to the features model to get an accurate ratio of users for each feature. Currently the total users (5) and the ratio is just a user inputted string which would soon become meaningless as more features/users are added.  
+
+I'd move the database away from sqlite as ideally I want to store the users' emails in an array and sqlite doesn't support arrays. Using a string and partially matching with %like% works well enough for now however.  
 
 
 # Challenge
