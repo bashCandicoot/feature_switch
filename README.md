@@ -17,10 +17,14 @@ Run:
 
 Head to the following urls in a browser/Postman/Insomnia  
 
-```GET    http://localhost:8081/features/email/{email}```  
+```GET    http://localhost:8081/features/email/{email}```    
+
 ```PUT    http://localhost:8081/features/{id}```  
+
 ```POST   http://localhost:8081/features/```  
+
 ```DELETE http://localhost:8081/features/{id}```  
+
 
 
 # Challenge
